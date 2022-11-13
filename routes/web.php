@@ -21,4 +21,12 @@ Route::get('/register',function () {
     return view('register');
 });
 
+Route::get('/login',function () {
+    return view('login');
+});
+
+Route::get('/catalog',function () {
+    return view('catalog');
+});
+
 Route::post('register/submit', [AuthController::class, 'register'])->name('register-form');
