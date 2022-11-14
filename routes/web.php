@@ -30,3 +30,4 @@ Route::get('/catalog',function () {
 });
 
 Route::post('register/submit', [AuthController::class, 'register'])->name('register-form');
+Route::post('login/submit', [AuthController::class, 'login'])->name('login-form');

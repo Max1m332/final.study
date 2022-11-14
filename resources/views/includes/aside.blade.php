@@ -7,31 +7,31 @@
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">
+        <a href="/" class="nav-link link-dark" aria-current="page">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
           Главная
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link link-dark">
+        <a href="/register" class="nav-link link-dark">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
           Авторизация
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link link-dark">
+        <a href="/login" class="nav-link link-dark">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
           Регистрация
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link link-dark">
+        <a href="/catalog" class="nav-link link-dark">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
           Каталог
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link link-dark">
+        <a href="/quit" class="nav-link link-dark">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
           Выход
         </a>
