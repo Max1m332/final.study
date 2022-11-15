@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProductController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,3 +33,4 @@ Route::get('/catalog',function () {
 
 Route::post('register/submit', [AuthController::class, 'register'])->name('register-form');
 Route::post('login/submit', [AuthController::class, 'login'])->name('login-form');
+Route::get('catalog', [ProductController::class, 'get_products']);

@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-
+@section('title-block')Авторизация@endsection
 
 @section('content')
 <h1>Авторизация</h1>
