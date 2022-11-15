@@ -15,7 +15,7 @@
   @foreach ($all_products as $item)
   <tr>
     <td>{{$item->id}}</td>
-    <td>{{$item->name}}</td>
+    <td>{{$item->title}}</td>
     <td>{{$item->price}}</td>
     <td>{{$item->quantity}}</td>
   </tr>
@@ -23,6 +23,9 @@
   
 
 </table>
+
+
+<a class="btn btn-primary" href="/catalog/add" role="button">Добавить Товар</a>
 
 
 

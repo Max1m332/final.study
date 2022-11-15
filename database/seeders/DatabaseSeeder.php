@@ -18,9 +18,15 @@ class DatabaseSeeder extends Seeder
 
 
         Product::create([
-            'name' => 'Куртка',
+            'title' => 'Куртка',
             'price' => 2000,
             'quantity' => 20
+        ]);
+
+        Product::create([
+            'title' => 'Футболка с крэветка',
+            'price' => 1000,
+            'quantity' => 3
         ]);
     }
 }

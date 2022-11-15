@@ -28,9 +28,12 @@ Route::get('/login',function () {
 });
 
 Route::get('/catalog',function () {
-    return view('catalog');
+    return view('catalog.list');
 });
 
-Route::post('register/submit', [AuthController::class, 'register'])->name('register-form');
-Route::post('login/submit', [AuthController::class, 'login'])->name('login-form');
-Route::get('catalog', [ProductController::class, 'get_products']);
+Route::post('/register/submit', [AuthController::class, 'register'])->name('register-form');
+Route::post('/login/submit', [AuthController::class, 'login'])->name('login-form');
+
+Route::get('/catalog', [ProductController::class, 'list']);
+Route::get('/catalog/add', [ProductController::class, 'new']);
+Route::post('/catalog/add/submit', [ProductController::class, 'add'])->name('products-form');
