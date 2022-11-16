@@ -24,17 +24,12 @@ class ProductController extends Controller
             'quantity' => 'required|numeric'
             ]);
 
-        $title = $request->title;
-        $price = $request->price;
-        $quantity = $request->quantity;
-
         Product::create([
             'title' => $request->title,
             'price' => $request->price,
             'quantity' => $request->quantity
         ]);
 
-        $all_products = Product::all();
-        return view('catalog.list', ['all_products' => $all_products]);
+        return redirect('/catalog');
     }
 }

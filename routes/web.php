@@ -37,3 +37,4 @@ Route::post('/login/submit', [AuthController::class, 'login'])->name('login-form
 Route::get('/catalog', [ProductController::class, 'list']);
 Route::get('/catalog/add', [ProductController::class, 'new']);
 Route::post('/catalog/add/submit', [ProductController::class, 'add'])->name('products-form');
+Route::get('/catalog/edit', [ProductController::class, 'edit'])->name('product-edit');
