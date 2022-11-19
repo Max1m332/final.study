@@ -41,12 +41,4 @@ class Controller extends BaseController
 
         return response()->json($response, $code);
     }
-
-    public function test()
-    {
-        return [
-            'data' => '123',
-            'limits' => Limit::exceed(1, 1)
-        ];
-    }
 }

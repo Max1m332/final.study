@@ -19,7 +19,10 @@
     <td>{{$item->price}}</td>
     <td>{{$item->quantity}}</td>
     <td>
-      <a href="{{ route('catalog/{{$item->id}}/edit')}}" class="btn btn-primary">Редактировать</a>
+      <a href="catalog/{{ $item->id }}/edit" class="btn btn-primary">Редактировать</a>
+  </td>
+  <td>
+    <a href="catalog/{{ $item->id }}/delete" class="btn btn-danger" onclick="return confirm('Хотите удалить товар')">Удалить</a>
   </td>
   </tr>
   @endforeach
