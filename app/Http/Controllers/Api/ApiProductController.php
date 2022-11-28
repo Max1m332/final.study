@@ -55,6 +55,12 @@ class ApiProductController extends Controller
         ];
         }    
         
+        $product = Product::find($id);
+
+        if ($product == null) {
+            return $this->sendError('Не найден id');
+        }
+        
         Product::find($id)->update([
             'title' => $request->title,
             'price' => $request->price,
@@ -70,13 +76,18 @@ class ApiProductController extends Controller
 
     public function delete($id) {
 
-        Product::find($id)->first()->delete();
+        $product = Product::find($id);
+
+        if ($product == null) {
+            return $this->sendError('Не найден id ');
+        }
+        
+        $product->delete();
 
         $result = [
             'status' => "success"
         ];
 
         return $this->sendResponse($result);
-
     }
 }

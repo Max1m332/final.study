@@ -23,9 +23,9 @@ Route::get('/register',function () {
     return view('register');
 });
 
-// Route::get('/login',function () {
-//     return view('login');
-// });
+Route::get('/login',function () {
+    return view('login');
+});
 
 Route::get('/catalog',function () {
     return view('catalog.list');
@@ -40,3 +40,4 @@ Route::post('/catalog/add/submit', [ProductController::class, 'add'])->name('pro
 Route::get('/catalog/{id}/edit', [ProductController::class, 'edit'])->name('product-edit');
 Route::post('/catalog/update', [ProductController::class, 'update']);
 Route::get('/catalog/{id}/delete', [ProductController::class, 'delete']);
+                             
